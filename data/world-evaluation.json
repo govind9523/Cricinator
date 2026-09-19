@@ -1,0 +1,385 @@
+{
+  "kind": "Synthetic sample using same source snapshot as inference; no independent human validation. Counts are source identities, not deduplicated people.",
+  "seed": 20260917,
+  "records": 12559,
+  "questions": 574,
+  "matrix_megabytes": 64.88,
+  "engine_build_seconds": 1.512,
+  "distinct_feature_signatures": 7469,
+  "ambiguous_records": 7300,
+  "sample_games": 120,
+  "correct_first_guesses": 28,
+  "sample_accuracy": 0.2333,
+  "mean_questions": 19.5,
+  "p95_question_ms": 11.39,
+  "failures": [
+    {
+      "target": "Samiullah Khan",
+      "guess": "Rizwan Ahmed"
+    },
+    {
+      "target": "Charlotte Evans",
+      "guess": "Sayeda Jahani"
+    },
+    {
+      "target": "Yeshey Wangmo",
+      "guess": "Tshering Yangchen"
+    },
+    {
+      "target": "Jason Long",
+      "guess": "Imran Bulbulia"
+    },
+    {
+      "target": "Harshil Brahmbhatt",
+      "guess": "Mansoor Shah"
+    },
+    {
+      "target": "R. P. Singh",
+      "guess": "Lalchand Rajput"
+    },
+    {
+      "target": "Abdul Jabbar",
+      "guess": "Mohsin Mulla"
+    },
+    {
+      "target": "Clemence Manidom",
+      "guess": "Olive Ranedoumoun"
+    },
+    {
+      "target": "Kim Barnett",
+      "guess": "Wilf Slack"
+    },
+    {
+      "target": "Pravitha Ganeshan",
+      "guess": "Stella Arooja"
+    },
+    {
+      "target": "Johanne Samarasekera",
+      "guess": "Arshad Laeeq"
+    },
+    {
+      "target": "Odean Smith",
+      "guess": "Kesrick Williams"
+    },
+    {
+      "target": "Faisal Mehmood",
+      "guess": "Ripon Mondol"
+    },
+    {
+      "target": "Sherul Mehta",
+      "guess": "Ben Jones"
+    },
+    {
+      "target": "Fazil Rahman",
+      "guess": "Ripon Mondol"
+    },
+    {
+      "target": "Mukhtar Ahmed",
+      "guess": "Aamer Yamin"
+    },
+    {
+      "target": "Soochan Park",
+      "guess": "Ben Jones"
+    },
+    {
+      "target": "Aisha Mohamed",
+      "guess": "Stella Arooja"
+    },
+    {
+      "target": "Kinaanath Ismail",
+      "guess": "Samantha Ramautar"
+    },
+    {
+      "target": "V. M. Muddiah",
+      "guess": "Ghulam Guard"
+    },
+    {
+      "target": "Vishaul Singh",
+      "guess": "Ripon Mondol"
+    },
+    {
+      "target": "Amarpreet Mehmi",
+      "guess": "Nosthush Kenjige"
+    },
+    {
+      "target": "Daisy Fisher",
+      "guess": "Milini Mudiyanselage"
+    },
+    {
+      "target": "Isitha Wijesundara",
+      "guess": "Mansoor Shah"
+    },
+    {
+      "target": "Akshadha Gunasekar",
+      "guess": "Sani Zehra"
+    },
+    {
+      "target": "Nathan Knights",
+      "guess": "Kuldeep Gholiya"
+    },
+    {
+      "target": "Vicky Mansale",
+      "guess": "Taalili Iosefo"
+    },
+    {
+      "target": "Natalia Kakor",
+      "guess": "Stella Arooja"
+    },
+    {
+      "target": "Saqlain Haider",
+      "guess": "Fayyaz Ahmed"
+    },
+    {
+      "target": "Paballo Pheko",
+      "guess": "Amanda Bola\u00f1os"
+    },
+    {
+      "target": "David Smith",
+      "guess": "Len Coldwell"
+    },
+    {
+      "target": "Zi Mei",
+      "guess": "Mwanamvua Ushanga"
+    },
+    {
+      "target": "Sajid Khan",
+      "guess": "Esam Rahman"
+    },
+    {
+      "target": "Julien Abega",
+      "guess": "Kyle Jamieson"
+    },
+    {
+      "target": "Haninder Dhillon",
+      "guess": "Mohsin Mulla"
+    },
+    {
+      "target": "Erin Burns",
+      "guess": "Samantha Ramautar"
+    },
+    {
+      "target": "Amay Khurasiya",
+      "guess": "Vijay Bharadwaj"
+    },
+    {
+      "target": "Ladha Ramji",
+      "guess": "Naoomal Jeoomal"
+    },
+    {
+      "target": "Neil McCallum",
+      "guess": "Ryan Watson"
+    },
+    {
+      "target": "Gogumal Kishenchand",
+      "guess": "Chandu Sarwate"
+    },
+    {
+      "target": "Jean Clark",
+      "guess": "Jacqueline Whitney"
+    },
+    {
+      "target": "Patricia Timong",
+      "guess": "Erin Vukusic"
+    },
+    {
+      "target": "V. R. V. Singh",
+      "guess": "Manpreet Gony"
+    },
+    {
+      "target": "Naseer Malik",
+      "guess": "Liaqat Ali"
+    },
+    {
+      "target": "Aliza Saleem",
+      "guess": "Jaspreet Kaur"
+    },
+    {
+      "target": "Bill Lundie",
+      "guess": "Harold Baumgartner"
+    },
+    {
+      "target": "Ansh Tandon",
+      "guess": "Ben Jones"
+    },
+    {
+      "target": "Ifeanyichukwu Uboh",
+      "guess": "Fanyan Mughal"
+    },
+    {
+      "target": "Pratham Hingorani",
+      "guess": "Kevin Sinclair"
+    },
+    {
+      "target": "Hopper Read",
+      "guess": "Errol Holmes"
+    },
+    {
+      "target": "Raheel Thakkar",
+      "guess": "Arnav Manoj"
+    },
+    {
+      "target": "Eshan Karimi",
+      "guess": "Akhil Kumar"
+    },
+    {
+      "target": "Matthew Musinguzi",
+      "guess": "Mansoor Shah"
+    },
+    {
+      "target": "Molly Dive",
+      "guess": "Norma Whiteman"
+    },
+    {
+      "target": "Chathurani Abeyratne",
+      "guess": "Stella Arooja"
+    },
+    {
+      "target": "Tafadzwa Tsiga",
+      "guess": "Charith Asalanka"
+    },
+    {
+      "target": "Abdul Rahman Bhadelia",
+      "guess": "Kuldeep Gholiya"
+    },
+    {
+      "target": "Jai Tiwari",
+      "guess": "Mansoor Shah"
+    },
+    {
+      "target": "Naiem Bameri",
+      "guess": "Ripon Mondol"
+    },
+    {
+      "target": "Brenda Waluma",
+      "guess": "Mwanamvua Ushanga"
+    },
+    {
+      "target": "Aslam Bera",
+      "guess": "Mansoor Shah"
+    },
+    {
+      "target": "Dave Robeson",
+      "guess": "Ben Jones"
+    },
+    {
+      "target": "Kyara Villanella",
+      "guess": "Samantha Ramautar"
+    },
+    {
+      "target": "Neema Micheline",
+      "guess": "Samantha Ramautar"
+    },
+    {
+      "target": "Arjun Kumal",
+      "guess": "Mansoor Shah"
+    },
+    {
+      "target": "Dion Stovell",
+      "guess": "Honey Gori"
+    },
+    {
+      "target": "Felicia Wright",
+      "guess": "Judith Black"
+    },
+    {
+      "target": "Sidhant Srikanth",
+      "guess": "Ben Jones"
+    },
+    {
+      "target": "Bill Athey",
+      "guess": "Richard Ellison"
+    },
+    {
+      "target": "Rohan Sandeep",
+      "guess": "Akhil Kumar"
+    },
+    {
+      "target": "Kishen Ghalley",
+      "guess": "Ben Jones"
+    },
+    {
+      "target": "Preeti Bose",
+      "guess": "Samantha Ramautar"
+    },
+    {
+      "target": "Reginald Scarlett",
+      "guess": "Chester Watson"
+    },
+    {
+      "target": "Numan Yousuf",
+      "guess": "Mansoor Shah"
+    },
+    {
+      "target": "Aliya Motorwala",
+      "guess": "Waheeda Akhtar"
+    },
+    {
+      "target": "Puja Chugani",
+      "guess": "Theresa Mansale"
+    },
+    {
+      "target": "Ramon Simmonds",
+      "guess": "Mansoor Shah"
+    },
+    {
+      "target": "Naseem Khan",
+      "guess": "Boro Jerkovic"
+    },
+    {
+      "target": "Zaheer Ibrahim",
+      "guess": "Honey Gori"
+    },
+    {
+      "target": "Clara Popa",
+      "guess": "Ashaani Durayalage"
+    },
+    {
+      "target": "Leano Maphane",
+      "guess": "Kevin Sinclair"
+    },
+    {
+      "target": "Ian Farrell",
+      "guess": "Ben Jones"
+    },
+    {
+      "target": "Chris Duckworth",
+      "guess": "Scotch Taylor"
+    },
+    {
+      "target": "Mohammad Ishaq",
+      "guess": "Arshad Laeeq"
+    },
+    {
+      "target": "Colin Blythe",
+      "guess": "Sydney Barnes"
+    },
+    {
+      "target": "Shenjian Zheng",
+      "guess": "Kevin Sinclair"
+    },
+    {
+      "target": "Kyle Phillip",
+      "guess": "Tanveer Sangha"
+    },
+    {
+      "target": "Irfan Sarfraz",
+      "guess": "Zuber Sunasara"
+    },
+    {
+      "target": "Clive Halse",
+      "guess": "Jonathan Fellows-Smith"
+    },
+    {
+      "target": "Rajwinder Brar",
+      "guess": "Ruwan Arachchilage"
+    },
+    {
+      "target": "Keeranmai Mandava",
+      "guess": "Mae Macelli"
+    },
+    {
+      "target": "Joanna Loughran",
+      "guess": "Theresa Mansale"
+    }
+  ]
+}

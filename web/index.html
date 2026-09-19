@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#09191e" />
+    <meta
+      name="description"
+      content="Think of a cricketer. Cricinator follows the clues in up to 20 questions. A cricket guessing game by Govind Kumar."
+    />
+    <title>Cricinator World — Read the game.</title>
+    <link rel="stylesheet" href="/static/style.css" />
+    <script src="/static/game.js" defer></script>
+    <script type="module" src="/static/stadium.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to the game</a>
+    <div id="stadium" aria-hidden="true"><div class="fallback-field"></div><div class="fallback-oracle"><span>✦</span></div></div>
+    <div class="scene-vignette" aria-hidden="true"></div>
+    <div class="scene-caption" aria-hidden="true"><span class="live-dot"></span> THE NIGHT SESSION <span class="scene-coordinate">28.6° N / WORLDWIDE</span></div>
+    <header>
+      <a class="brand" href="/" aria-label="Cricinator home"
+        ><span class="brand-icon">c.</span>cricinator<span class="brand-dot"
+          >●</span
+        ></a
+      >
+      <nav>
+        <button id="roster-open" class="text-button">Explore players ↗</button
+        ><a
+          href="https://github.com/govind9523/Cricinator"
+          target="_blank"
+          rel="noopener"
+          >GitHub ↗</a
+        >
+      </nav>
+    </header>
+    <main id="main">
+      <section id="home" class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="live-dot"></span> THE WORLD IS YOUR PLAYING FIELD
+          </p>
+          <h1>A name in your mind.<br />A game of <em>intuition.</em></h1>
+          <p class="intro">
+            Meet Scout, your cricket oracle. Think of a player.<br />A few clues. Twenty questions. One final call.
+          </p>
+          <label class="mode-label" for="mode">CHOOSE YOUR INNINGS</label><select id="mode" class="mode-select"><option value="classic">Classic · 138 enriched profiles</option><option value="world">World beta · international roster</option></select><p id="mode-note" class="small muted">World beta is experimental: 28/120 correct first guesses in a synthetic sample. Many records lack distinguishing facts. Classic is recommended.</p>
+          <button id="start" class="primary">
+            Let’s play <span>↗</span>
+          </button>
+          <p class="small muted">
+            Free to play · No sign-up · Your next innings starts here
+          </p>
+          <div class="hero-stats">
+            <div>
+              <strong id="player-count">—</strong
+              ><span>playable profiles</span>
+            </div>
+            <div><strong>20</strong><span>questions to find yours</span></div>
+            <div><strong id="catalog-count">—</strong><span>international records</span></div>
+          </div>
+        </div>
+        <div class="host-caption"><span class="host-badge">YOUR HOST</span><h2>Scout<span>✦</span></h2><p id="host-line">“I know cricket. Let’s see if I know your cricketer.”</p></div>
+      </section>
+      <section id="game" hidden class="game-layout">
+        <aside>
+          <p class="eyebrow">SCOUT IS ON THE CASE</p>
+          <h2>Every clue<br />changes the game.</h2>
+          <p class="muted">
+            Think about their whole career. Unsure about a fact? “Don't know” is
+            a perfectly good answer.
+          </p>
+          <div class="mini-pitch" aria-hidden="true">│ │ │</div>
+          <button id="restart" class="text-button">↻ Start a new round</button>
+        </aside>
+        <div class="question-card">
+          <div class="question-top">
+            <span id="round-label" class="eyebrow">QUESTION 01</span
+            ><span class="muted">MAX. 20</span>
+          </div>
+          <p id="engine-note" class="engine-note"></p>
+          <progress
+            id="progress"
+            max="20"
+            value="0"
+            aria-label="Questions answered"
+          ></progress>
+          <div id="question-panel">
+            <h2 id="question" tabindex="-1"></h2>
+            <div id="answers" class="answers">
+              <button data-answer="yes">Yes <kbd>1</kbd></button
+              ><button data-answer="probably">Probably <kbd>2</kbd></button
+              ><button data-answer="unknown">Don't know <kbd>3</kbd></button
+              ><button data-answer="probably_not">
+                Probably not <kbd>4</kbd></button
+              ><button data-answer="no">No <kbd>5</kbd></button>
+            </div>
+            <div class="question-bottom">
+              <button id="undo" class="text-button">← Previous answer</button
+              ><span class="small muted">Keyboard: 1–5</span>
+            </div>
+          </div>
+          <div id="result-panel" hidden>
+            <p id="result-kicker" class="eyebrow">MY PICK</p>
+            <div id="initials" class="avatar" aria-hidden="true"></div>
+            <h2 id="guess-name" tabindex="-1"></h2>
+            <p id="guess-detail" class="muted"></p>
+            <p id="result-message"></p>
+            <a id="profile" target="_blank" rel="noopener">Player profile ↗</a>
+            <div id="guess-actions">
+              <button id="confirm" class="primary">
+                Yes, that's my player ✓</button
+              ><button id="reject" class="secondary">No, keep looking</button
+              ><button id="correct" class="text-button">
+                I'll tell you who it was
+              </button>
+              <p class="small muted">
+                Confirming submits these answers anonymously for review.
+              </p>
+            </div>
+            <div id="correction" hidden>
+              <label for="correct-player">Who were you thinking of?</label
+              ><select id="correct-player">
+                <option value="">Select a supported player</option></select
+              ><button id="save-correction" class="primary">
+                Save feedback
+              </button>
+              <p class="small muted">
+                Not in the roster? This version can't identify them yet.
+              </p>
+            </div>
+            <button id="play-again" class="primary" hidden>
+              Another innings ↗
+            </button>
+          </div>
+        </div>
+      </section>
+      <p id="status" role="status" aria-live="polite"></p>
+      <section class="how">
+        <div>
+          <span class="step-number">01 /</span>
+          <h3>Pick your player</h3>
+          <p>
+            Choose someone from our international cricket roster. Keep the name
+            to yourself.
+          </p>
+        </div>
+        <div>
+          <span class="step-number">02 /</span>
+          <h3>Follow the questions</h3>
+          <p>Answer what you know. You can go back if you change your mind.</p>
+        </div>
+        <div>
+          <span class="step-number">03 /</span>
+          <h3>Make the call</h3>
+          <p>
+            Confirm the guess or correct it. Your feedback is saved for review.
+          </p>
+        </div>
+      </section>
+      <section class="ai-lab" aria-labelledby="ai-lab-title">
+        <div>
+          <p class="eyebrow">AI LAB</p>
+          <h2 id="ai-lab-title">Built like a research project, playable like a game.</h2>
+          <p>
+            The game does not call a chatbot. It narrows players with a
+            probability model, chooses high-information questions, and saves
+            corrections for reviewed learning.
+          </p>
+          <ol id="pipeline" class="pipeline"></ol>
+        </div>
+        <div class="metric-grid" aria-label="Research validation metrics">
+          <article>
+            <span>Classic validation</span>
+            <strong id="classic-score">—</strong>
+            <p id="classic-detail">Loading evaluation…</p>
+          </article>
+          <article>
+            <span>Noisy answers</span>
+            <strong id="noisy-score">—</strong>
+            <p id="noisy-detail">Loading robustness test…</p>
+          </article>
+          <article>
+            <span>World catalog</span>
+            <strong id="world-records">—</strong>
+            <p id="world-detail">Loading source coverage…</p>
+          </article>
+          <article>
+            <span>Research limit</span>
+            <strong id="limit-score">—</strong>
+            <p id="limit-detail">Loading ambiguity report…</p>
+          </article>
+        </div>
+      </section>
+      <details class="research">
+        <summary>A game with a research story <span>+</span></summary>
+        <p>
+          Created by Govind Kumar. The IEEE DISCOVER paper and this app share
+          the same project goal: adaptive cricket guessing. This release
+          implements Bayesian inference, information-gain questions, a reviewed
+          feedback pipeline and reproducible evaluation artifacts.
+        </p>
+        <a
+          href="https://ieeexplore.ieee.org/document/11259006/"
+          target="_blank"
+          rel="noopener"
+          >Read the IEEE DISCOVER 2025 paper ↗</a
+        >
+        <p class="small muted">
+          Player facts: Wikipedia contributors, with sources linked in results.
+          Team histories may be incomplete. Anonymous game feedback is stored on
+          this server; no account or email is needed.
+        </p>
+      </details>
+    </main>
+    <footer>
+      <span
+        >cricinator.
+        <span class="muted">Built for the love of the game.</span></span
+      ><a href="https://github.com/govind9523" target="_blank" rel="noopener"
+        >Made by Govind Kumar ↗</a
+      >
+    </footer>
+    <dialog id="roster-dialog" aria-label="Explore cricket players">
+      <div class="dialog-top">
+        <div>
+          <p class="eyebrow">THE SQUAD</p>
+          <h2>Find your inspiration.</h2>
+        </div>
+        <button
+          id="roster-close"
+          aria-label="Close player list"
+          class="secondary"
+        >
+          ✕
+        </button>
+      </div>
+      <label for="search">Search by player or country</label
+      ><input
+        id="search"
+        type="search"
+        placeholder="Try Kohli, England, Bumrah…"
+        autocomplete="off"
+      />
+      <p class="small muted">Browsing doesn't tell the game who you picked.</p>
+      <div class="catalog-tabs" role="group" aria-label="Player list"><button id="playable-tab" aria-pressed="true">Playable squad</button><button id="catalog-tab" aria-pressed="false">World catalog</button></div><p id="coverage-note" class="small muted">Playable profiles have question facts. Catalog entries may not yet be identifiable.</p><p id="catalog-status" role="status" class="small muted"></p><div id="roster-list" class="roster-list"></div>
+    </dialog>
+  </body>
+</html>

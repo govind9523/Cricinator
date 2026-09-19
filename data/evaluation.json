@@ -1,0 +1,130 @@
+{
+  "method": "Truth generated from the same knowledge base as inference. Measures consistency and synthetic robustness, not independent factual or human validation. No learning updates during evaluation.",
+  "seed": 42,
+  "players": 138,
+  "clean": {
+    "games": 138,
+    "correct_first_guess": 138,
+    "accuracy": 1.0,
+    "mean_questions": 7.93,
+    "max_questions": 11,
+    "answer_flip_probability": 0,
+    "unknown_probability": 0,
+    "failures": []
+  },
+  "noisy": {
+    "games": 276,
+    "correct_first_guess": 250,
+    "accuracy": 0.9058,
+    "mean_questions": 11.01,
+    "max_questions": 20,
+    "answer_flip_probability": 0.05,
+    "unknown_probability": 0.15,
+    "failures": [
+      {
+        "target": "AB de Villiers",
+        "guess": "Temba Bavuma"
+      },
+      {
+        "target": "Adil Rashid",
+        "guess": "Jofra Archer"
+      },
+      {
+        "target": "Anil Kumble",
+        "guess": "Shane Warne"
+      },
+      {
+        "target": "Dasun Shanaka",
+        "guess": "Ellyse Perry"
+      },
+      {
+        "target": "Devon Conway",
+        "guess": "Mitchell Starc"
+      },
+      {
+        "target": "Glenn Maxwell",
+        "guess": "Mohammad Nabi"
+      },
+      {
+        "target": "Hardik Pandya",
+        "guess": "Ellyse Perry"
+      },
+      {
+        "target": "Joe Root",
+        "guess": "Adam Zampa"
+      },
+      {
+        "target": "Joe Root",
+        "guess": "Harry Tector"
+      },
+      {
+        "target": "Kusal Mendis",
+        "guess": "Nicholas Pooran"
+      },
+      {
+        "target": "Liam Livingstone",
+        "guess": "Roston Chase"
+      },
+      {
+        "target": "Lungi Ngidi",
+        "guess": "Kagiso Rabada"
+      },
+      {
+        "target": "Mohammad Nabi",
+        "guess": "Ross Taylor"
+      },
+      {
+        "target": "Mohammad Nawaz",
+        "guess": "Shadab Khan"
+      },
+      {
+        "target": "Mohammad Rizwan",
+        "guess": "Mark Wood"
+      },
+      {
+        "target": "Ross Taylor",
+        "guess": "Faf du Plessis"
+      },
+      {
+        "target": "Rovman Powell",
+        "guess": "Shai Hope"
+      },
+      {
+        "target": "Rovman Powell",
+        "guess": "Obed McCoy"
+      },
+      {
+        "target": "Sean Williams",
+        "guess": "Shakib Al Hasan"
+      },
+      {
+        "target": "Shaheen Afridi",
+        "guess": "Fazalhaq Farooqi"
+      },
+      {
+        "target": "Shai Hope",
+        "guess": "Haris Rauf"
+      },
+      {
+        "target": "Shakib Al Hasan",
+        "guess": "Ben Stokes"
+      },
+      {
+        "target": "Sir Garfield Sobers",
+        "guess": "Sir Vivian Richards"
+      },
+      {
+        "target": "Trent Boult",
+        "guess": "Chris Woakes"
+      },
+      {
+        "target": "Wasim Akram",
+        "guess": "Allan Border"
+      },
+      {
+        "target": "Wasim Akram",
+        "guess": "Andrew Flintoff"
+      }
+    ]
+  }
+}

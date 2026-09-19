@@ -1,0 +1,35 @@
+# Local environments, secrets, and private game feedback
+.venv/
+venv/
+.env
+.env.*
+instance/
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+private/
+
+# Local caches and generated noise
+__pycache__/
+*.pyc
+*.pyo
+.ruff_cache/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+.DS_Store
+*.log
+
+# Scraping caches and regenerable scratch data
+.cache/
+players_data_with_all_info.csv
+prprocessed.csv
+p.csv
+
+# Editor and local workspace files
+*.code-workspace
+.vscode/
+.idea/
+.dist/
+Today_assignmnet/
